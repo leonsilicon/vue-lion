@@ -1,5 +1,5 @@
-import type LionCard from '~/components/lion-card.vue.js';
 import type LionButton from '~/components/lion-button.vue.js';
+import type LionCard from '~/components/lion-card.vue.js';
 import type LionCombobox from '~/components/lion-combobox.vue.js';
 import type LionDialog from '~/components/lion-dialog.vue.js';
 import type LionError from '~/components/lion-error.vue.js';

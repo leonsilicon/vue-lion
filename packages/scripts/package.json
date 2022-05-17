@@ -1,5 +1,5 @@
 {
-	"name": "@{{project_name}/scripts",
+	"name": "@vue-lion/scripts",
 	"type": "module",
 	"dependencies": {
 		"lion-system": "^1.3.25"

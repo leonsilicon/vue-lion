@@ -1,9 +1,9 @@
-<script lang="ts">
-export default { inheritAttrs: false };
-</script>
+<script lang="ts"></script>
 
 <script setup lang="ts">
 import { VueSpinner } from 'vue3-spinners';
+
+export default { inheritAttrs: false };
 
 const { loading, error } = defineProps<{
 	loading?: boolean;
