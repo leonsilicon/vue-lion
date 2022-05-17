@@ -6,7 +6,7 @@ chProjectDir(import.meta.url);
 rmDist();
 exec('tsc');
 exec('tsc-alias');
-compileVueSFC({
+await compileVueSFC({
 	files: 'src/components/*.vue',
 	declarations: true,
 	outDir: 'dist',
