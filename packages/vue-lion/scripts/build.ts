@@ -5,11 +5,11 @@ import { chProjectDir, copyPackageFiles, rmDist } from 'lionconfig';
 chProjectDir(import.meta.url);
 rmDist();
 exec('tsc');
-exec('tsc-alias');
 await compileVueSFC({
 	files: 'src/components/*.vue',
 	declarations: true,
 	outDir: 'dist',
 	projectRootPath: 'src',
 });
+exec('tsc-alias');
 await copyPackageFiles({ commonjs: false });
