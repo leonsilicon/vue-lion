@@ -29,6 +29,7 @@
 		"vue3-spinners": "^1.2.1"
 	},
 	"devDependencies": {
+		"@vue/runtime-core": "^3.2.35",
 		"compile-vue-sfc": "^0.2.0",
 		"desm": "^1.2.0",
 		"execa": "^6.1.0",

@@ -9,7 +9,7 @@ import type LionLink from '~/components/lion-link.vue.js';
 import type LionPasswordInput from '~/components/lion-password-input.vue.js';
 import type LionSeparator from '~/components/lion-separator.vue.js';
 
-declare module 'vue' {
+declare module '@vue/runtime-core' {
 	export interface GlobalComponents {
 		LionButton: typeof LionButton;
 		LionCard: typeof LionCard;
