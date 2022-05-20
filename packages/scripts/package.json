@@ -1,5 +1,4 @@
 {
 	"name": "@vue-lion/scripts",
-	"type": "module",
-	"dependencies": {}
+	"type": "module"
 }
