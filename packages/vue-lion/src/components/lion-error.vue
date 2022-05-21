@@ -42,14 +42,14 @@ const shouldDisplayError = $computed(() => {
 </script>
 
 <template>
-	<div v-if="shouldDisplayError" class="app-error">
+	<div v-if="shouldDisplayError" class="lion-error">
 		<div v-if="useHtml" v-html="escapedMessage"></div>
 		<div v-else>{{ message }}</div>
 	</div>
 </template>
 
 <style lang="postcss">
-.app-error {
+.lion-error {
 	@apply text-sm text-red-500;
 }
 </style>

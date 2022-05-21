@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { mdiEye, mdiEyeOff } from '@mdi/js';
+import { VueIcon } from 'simple-vue-icon';
 
 const { modelValue, passwordError, visible } = defineProps<{
 	// Accept `undefined` for easier use at call site
@@ -44,7 +45,7 @@ const passwordModel = $computed({
 </script>
 
 <template>
-	<AppInput
+	<LionInput
 		v-model="passwordModel"
 		input-class="pr-10"
 		:type="isPasswordVisible ? 'text' : 'password'"
@@ -67,5 +68,5 @@ const passwordModel = $computed({
 				</button>
 			</slot>
 		</template>
-	</AppInput>
+	</LionInput>
 </template>

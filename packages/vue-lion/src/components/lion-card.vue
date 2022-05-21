@@ -13,20 +13,20 @@ const { fullPageBackground = false } = defineProps<{
 <template>
 	<template v-if="fullPageBackground">
 		<div class="h-full column bg-gray-100 items-center justify-center">
-			<div class="app-card" v-bind="$attrs">
+			<div class="lion-card" v-bind="$attrs">
 				<slot></slot>
 			</div>
 		</div>
 	</template>
 	<template v-else>
-		<div class="app-card" v-bind="$attrs">
+		<div class="lion-card" v-bind="$attrs">
 			<slot></slot>
 		</div>
 	</template>
 </template>
 
 <style lang="postcss">
-div:where(.app-card) {
+div:where(.lion-card) {
 	@apply border-1 border-gray-300 bg-white rounded-md p-6;
 }
 </style>

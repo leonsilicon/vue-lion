@@ -19,14 +19,14 @@ const emit = defineEmits<{
 	<div class="column">
 		<button
 			type="button"
-			class="app-button"
+			class="lion-button"
 			v-bind="$attrs"
 			@click="emit('click', $event)"
 		>
 			<VueSpinner v-if="loading" />
 			<slot v-else></slot>
 		</button>
-		<AppError
+		<LionError
 			v-if="error !== undefined && error !== ''"
 			class="text-center mt-3"
 			:message="error"
@@ -35,7 +35,7 @@ const emit = defineEmits<{
 </template>
 
 <style lang="postcss">
-button:where(.app-button) {
+button:where(.lion-button) {
 	@apply inline-block px-6 py-2.5 bg-orange-400 text-white font-bold text-sm leading-tight rounded shadow-md transition duration-150 ease-in-out hover:(bg-orange-500 shadow-lg bg-orange-500 shadow-lg outline-none ring-0) active:(bg-orange-600 active:shadow-lg);
 }
 </style>

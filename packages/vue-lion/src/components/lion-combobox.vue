@@ -49,7 +49,7 @@ const selectedModel = $computed({
 					class="focus:outline-none relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left border-1 sm:text-sm"
 				>
 					<ComboboxInput
-						class="app-input"
+						class="lion-input"
 						@change="queryModel = $event.target.value"
 					/>
 				</div>

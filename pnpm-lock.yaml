@@ -25,6 +25,7 @@ importers:
       execa: ^6.1.0
       isomorphic-dompurify: ^0.19.0
       nanoid-nice: ^1.0.1
+      simple-vue-icon: ^1.3.5
       typescript: ^4.6.4
       vitest: latest
       vue: ^3.2.33
@@ -35,6 +36,7 @@ importers:
       '@mdi/js': 6.7.96
       isomorphic-dompurify: 0.19.0
       nanoid-nice: 1.0.1
+      simple-vue-icon: 1.3.5_vue@3.2.35
       vue-animate-height: 1.1.2_vue@3.2.35
       vue3-spinners: 1.2.1_vue@3.2.35
     devDependencies:
@@ -6810,6 +6812,14 @@ packages:
   /signal-exit/3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: true
+
+  /simple-vue-icon/1.3.5_vue@3.2.35:
+    resolution: {integrity: sha512-1tBvGe2nn0J23djKcydDEZVohU0OaxC1xlN8RFmpLeLA/Wfnn+LEc/C40GKle9VcnDFRXpkowjTabw27N0ej7A==}
+    peerDependencies:
+      vue: ^3
+    dependencies:
+      vue: 3.2.35
+    dev: false
 
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}

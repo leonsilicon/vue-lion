@@ -46,7 +46,7 @@ defineExpose({
 				v-bind="$attrs"
 				ref="inputElement"
 				v-model="value"
-				class="app-input"
+				class="lion-input"
 				:class="[
 					inputClass,
 					{ 'border-red-300': error !== undefined && error !== '' },
@@ -64,8 +64,8 @@ defineExpose({
 </template>
 
 <style lang="postcss">
-textarea:where(.app-input),
-input:where(.app-input) {
+textarea:where(.lion-input),
+input:where(.lion-input) {
 	@apply block w-full px-4 py-2 text-gray-700 bg-white border-2 border-gray-200 rounded-md transition-colors focus:(border-blue-400 ring ring-blue-300 ring-opacity-4 outline-none);
 }
 </style>
