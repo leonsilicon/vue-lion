@@ -2,7 +2,8 @@
 import { mdiEye, mdiEyeOff } from '@mdi/js';
 
 const { modelValue, passwordError, visible } = defineProps<{
-	modelValue: string;
+	// Accept `undefined` for easier use at call site
+	modelValue: string | undefined;
 	passwordError?: string;
 	visible?: boolean;
 }>();
@@ -34,7 +35,7 @@ const isPasswordVisible = $computed({
 
 const passwordModel = $computed({
 	get() {
-		return modelValue;
+		return modelValue ?? '';
 	},
 	set(newPassword: string) {
 		emit('update:modelValue', newPassword);

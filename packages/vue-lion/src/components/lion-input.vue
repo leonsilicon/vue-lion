@@ -5,7 +5,8 @@ import AnimateHeight from 'vue-animate-height';
 import { zeroWidth } from '~/utils/html.js';
 
 const { modelValue, error, inputClass } = defineProps<{
-	modelValue: string;
+	// Accept `undefined` for easier use at call site
+	modelValue: string | undefined;
 	error?: string;
 	inputClass?: string;
 }>();
@@ -18,7 +19,7 @@ const emit = defineEmits<{
 
 const value = $computed({
 	get() {
-		return modelValue;
+		return modelValue ?? '';
 	},
 	set(value: string) {
 		emit('update:modelValue', value);
