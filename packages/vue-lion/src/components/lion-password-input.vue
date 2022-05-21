@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { mdiEye, mdiEyeOff } from '@mdi/js';
-import { VueIcon } from 'simple-vue-icon';
+import VueIcon from 'simple-vue-icon';
 
 const { modelValue, passwordError, visible } = defineProps<{
 	// Accept `undefined` for easier use at call site
