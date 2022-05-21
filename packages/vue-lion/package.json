@@ -1,7 +1,7 @@
 {
 	"name": "vue-lion",
 	"type": "module",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "My personal Vue components.",
 	"license": "MIT",
 	"author": {
